@@ -1,0 +1,41 @@
+<html></html>
+<head><title>Objek CheckBox</title></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <script languange ="JavaScript">
+    function check_box(form)
+{
+        var ket = "";
+        if ((form.nonton_tv.checked == true) &&
+        (form .sepak_bola.checked == true))
+    {
+        ket = "Sepak Bola & Nonton TV";
+    }
+    else if ( form.nonton_tv.checked == true )
+    {
+        ket = "Nonton TV";
+    }
+    else
+    {
+        ket = "Sepak Bola";
+    }
+    alert( ' Hobby Anda adalah ' +ket);
+}
+</script>
+<form>
+<H1>Memasukkan Data</H1><hr>
+<p><input type="checkbox" value="nonton_tv"
+    name="nonton_tv">Nonton TV</p>
+    <hr>
+    <p><input type="checkbox" value="sepak_bola"
+    name="sepak_bola">Sepak Bola</p>
+    <hr>
+    <p><input type="button" value="CONFIRM"
+        onclick=" check_box(this.form) ">
+        <input type="reset" value="RESET"></p>
+</form>    
+</body>
+</html>
